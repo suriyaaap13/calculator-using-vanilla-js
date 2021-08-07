@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+
+}
+/* main */
+main{
+    display: grid;
+    grid-column: 1fr;
+    margin-left: 35%;
+    margin-top: 8%;
+    width: 400px;
+    grid-auto-rows: minmax(100px,auto);
+    border: 1px solid white;
+    color: white;
+}
+/* display-container */
+#display-container{
+    height: 150px;
+    width: 100%;
+    background-color: grey;
+}
+#display{
+    padding: 10px;
+    color: white;
+
+}
+/* Keypad */
+#keypad{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* background-color: grey; */
+    grid-auto-rows: 80px;
+    grid-auto-columns: 80px;
+    /* grid-gap: 0; */
+    
+}
+.keys{
+    border:1px solid white;
+}
+.keys span{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+.color-aqua span{
+    color: aqua;
+}
+
