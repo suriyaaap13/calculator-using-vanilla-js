@@ -17,27 +17,49 @@ main{
 }
 /* display-container */
 #display-container{
-    height: 150px;
     width: 100%;
-    background-color: grey;
-}
-#display{
-    padding: 10px;
+    min-height: 100px;
+    font-size: 2.8rem;
+    display: flex;
     color: white;
-
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+    
+    background-color: black;
+}
+#display-container p{
+    margin: 0.5rem;
+    vertical-align: text-bottom;
+    
 }
 /* Keypad */
 #keypad{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    /* background-color: grey; */
     grid-auto-rows: 80px;
     grid-auto-columns: 80px;
-    /* grid-gap: 0; */
     
 }
 .keys{
     border:1px solid white;
+}
+.keys:hover{
+    background-color:aqua;
+    
+}
+.keys:hover span{
+    background-color:aqua;
+    color: black;
+}
+#color-aqua:hover{
+    background-color: aqua;
+    
+}
+#color-aqua:hover span{
+    color: black;
+    
 }
 .keys span{
     display: flex;
@@ -47,7 +69,7 @@ main{
     color: white;
     font-size: 30px;
 }
-.color-aqua span{
+#color-aqua span{
     color: aqua;
 }
 
